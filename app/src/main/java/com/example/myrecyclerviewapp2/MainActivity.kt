@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         adapter = RecyclerAdapter()
         binding.recyclerView.adapter = adapter
 
+
+
         //val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         //recycler View.layoutManager  = layoutManager
         //recyclerView.adapter = adapter

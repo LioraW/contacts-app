@@ -1,11 +1,14 @@
 package com.example.myrecyclerviewapp2
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myrecyclerviewapp2.databinding.CardLayoutBinding
 
@@ -20,7 +23,13 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
         init {
             itemView.setOnClickListener{
                 val position: Int = bindingAdapterPosition
-                Toast.makeText(itemView.context, "Clicked on ${titles[position]}", Toast.LENGTH_SHORT ).show()
+                val name = titles[position]
+                //Toast.makeText(itemView.context, "Clicked on ${titles[position]}", Toast.LENGTH_SHORT ).show()
+                val intent = Intent(itemView.context, ContactActivity::class.java) //from this package to contactActivity, we want to call this acitivity
+                intent.putExtra("Name", name) // we have an extra called name
+
+                itemView.context.startActivity(intent) //run the activity 2
+
             }
         }
     }
