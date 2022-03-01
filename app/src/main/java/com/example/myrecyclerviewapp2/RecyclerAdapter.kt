@@ -1,6 +1,9 @@
 package com.example.myrecyclerviewapp2
 
+import android.app.Application
+import android.content.Context
 import android.content.Intent
+import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,21 +15,34 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myrecyclerviewapp2.databinding.CardLayoutBinding
 
-class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
+
+class RecyclerAdapter(val context : Context): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
     //create some data
     // Could come from some other file
-    private var titles = arrayOf("Title 1", "Title 2","Title 3","Title 4","Title 5","Title 6","Title 7","Title 8","Title 9","Title 10",)
-    private var details = arrayOf("Details 1", "Details 2","Details 3","Details 4","Details 5","Details 6","Details 7","Details 8","Details 9","Details 10",)
-    private var images = arrayOf(R.drawable.android,R.drawable.android,R.drawable.android,R.drawable.android,R.drawable.android,R.drawable.android,R.drawable.android,R.drawable.android,R.drawable.android,R.drawable.android,)
+    private var contacts : Contacts = Contacts(context)
+    private var names  = contacts.names
+    private var addresses = contacts.addresses
+    private var numbers = contacts.numbers
+    private var emails = contacts.emails
+    private var images = contacts.images
+
 
     inner class ViewHolder(val binding : CardLayoutBinding): RecyclerView.ViewHolder(binding.root) {
         init {
             itemView.setOnClickListener{
                 val position: Int = bindingAdapterPosition
-                val name = titles[position]
-                //Toast.makeText(itemView.context, "Clicked on ${titles[position]}", Toast.LENGTH_SHORT ).show()
+                val name = names[position]
+                val address = addresses[position]
+                val number = numbers[position]
+                val email = emails[position]
+                val image = images[position]
+
                 val intent = Intent(itemView.context, ContactActivity::class.java) //from this package to contactActivity, we want to call this acitivity
                 intent.putExtra("Name", name) // we have an extra called name
+                intent.putExtra("Address", address)
+                intent.putExtra("Number", number)
+                intent.putExtra("Email", email)
+                intent.putExtra("Image", image)
 
                 itemView.context.startActivity(intent) //run the activity 2
 
@@ -42,13 +58,13 @@ class RecyclerAdapter: RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
         with(holder){
             with(binding){
                 itemImage.setImageResource(images[position])
-                itemTitle.text = titles[position]
-                itemDetails.text = details[position]
+                itemTitle.text = names[position]
+                itemDetails.text = addresses[position]
             }
         }
     }
 
     override fun getItemCount(): Int {
-        return titles.size
+        return names.size
     }
 }

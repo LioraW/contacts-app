@@ -19,7 +19,11 @@ class ContactActivity : AppCompatActivity() {
 
 
         val name = intent.getStringExtra("Name")
+        val address = intent.getStringExtra("Address")
+        //val image = intent.get //see https://stackoverflow.com/questions/12210156/passing-the-image-in-putextra-in-android
+
         contactName.text = "$name"
+        contactAddress.text = "$address"
 
     }
 }

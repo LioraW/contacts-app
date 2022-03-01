@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contactNames">
+        <item>Reuven</item>
+        <item>Shimon</item>
+        <item>Levi</item>
+        <item>Yehuda</item>
+        <item>Issacar</item>
+        <item>Zebulun</item>
+        <item>Dan</item>
+        <item>Naftali</item>
+        <item>Gad</item>
+        <item>Asher</item>
+        <item>Yosef</item>
+        <item>Binyamin</item>
+    </string-array>
+    <string-array name="contactAddresses">
+        <item>Street1</item>
+        <item>Street2</item>
+        <item>Street3</item>
+        <item>Street4</item>
+        <item>Street5</item>
+        <item>Street6</item>
+        <item>Street7</item>
+        <item>Street8</item>
+        <item>Street9</item>
+        <item>Street10</item>
+        <item>Street11</item>
+        <item>Street12</item>
+    </string-array>
+    <string-array name="contactNumbers">
+        <item>123–456-7890</item>
+        <item>123–456-7890</item>
+        <item>123-456-7890</item>
+        <item>123-456-7890</item>
+        <item>123-456-7890</item>
+        <item>123-456-7890</item>
+        <item>123-456-7890</item>
+        <item>123-456-7890</item>
+        <item>123-456-7890</item>
+        <item>123-456-7890</item>
+        <item>123-456-7890</item>
+        <item>123-456-7890</item>
+    </string-array>
+    <string-array name="contactEmails">
+        <item>beniYisroel@torah.org</item>
+        <item>beniYisroel@torah.org</item>
+        <item>beniYisroel@torah.org</item>
+        <item>beniYisroel@torah.org</item>
+        <item>beniYisroel@torah.org</item>
+        <item>beniYisroel@torah.org</item>
+        <item>beniYisroel@torah.org</item>
+        <item>beniYisroel@torah.org</item>
+        <item>beniYisroel@torah.org</item>
+        <item>beniYisroel@torah.org</item>
+        <item>beniYisroel@torah.org</item>
+        <item>beniYisroel@torah.org</item>
+    </string-array>
+
+
+</resources>
