@@ -38,12 +38,9 @@ class RecyclerAdapter(val context : Context): RecyclerView.Adapter<RecyclerAdapt
                 val image = images.getDrawable(position)
 
                 val intent = Intent(itemView.context, ContactActivity::class.java) //from this package to contactActivity, we want to call this acitivity
-                intent.putExtra("Name", name) // we have an extra called name
-                intent.putExtra("Address", address)
-                //intent.putExtra("Number", number)
-                //intent.putExtra("Email", email)
+
                 intent.putExtra("ContactId", position)
-                ///intent.putExtra("Image", image)
+
 
                 itemView.context.startActivity(intent) //run the activity 2
 
