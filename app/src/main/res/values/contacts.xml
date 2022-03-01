@@ -56,6 +56,21 @@
         <item>beniYisroel@torah.org</item>
         <item>beniYisroel@torah.org</item>
     </string-array>
+    <array name="contactImages">
+        <item>@drawable/android</item>
+        <item>@drawable/android</item>
+        <item>@drawable/android</item>
+        <item>@drawable/android</item>
+        <item>@drawable/android</item>
+        <item>@drawable/android</item>
+        <item>@drawable/android</item>
+        <item>@drawable/android</item>
+        <item>@drawable/android</item>
+        <item>@drawable/android</item>
+        <item>@drawable/android</item>
+        <item>@drawable/android</item>
+        <item>@drawable/android</item>
+    </array>
 
 
 </resources>

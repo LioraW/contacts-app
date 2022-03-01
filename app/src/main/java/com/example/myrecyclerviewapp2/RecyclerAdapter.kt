@@ -35,14 +35,15 @@ class RecyclerAdapter(val context : Context): RecyclerView.Adapter<RecyclerAdapt
                 val address = addresses[position]
                 val number = numbers[position]
                 val email = emails[position]
-                val image = images[position]
+                val image = images.getDrawable(position)
 
                 val intent = Intent(itemView.context, ContactActivity::class.java) //from this package to contactActivity, we want to call this acitivity
                 intent.putExtra("Name", name) // we have an extra called name
                 intent.putExtra("Address", address)
-                intent.putExtra("Number", number)
-                intent.putExtra("Email", email)
-                intent.putExtra("Image", image)
+                //intent.putExtra("Number", number)
+                //intent.putExtra("Email", email)
+                intent.putExtra("ContactId", position)
+                ///intent.putExtra("Image", image)
 
                 itemView.context.startActivity(intent) //run the activity 2
 
@@ -57,9 +58,12 @@ class RecyclerAdapter(val context : Context): RecyclerView.Adapter<RecyclerAdapt
     override fun onBindViewHolder(holder: RecyclerAdapter.ViewHolder, position: Int) { //almost always the same. we have to pass the instance of the title, postion
         with(holder){
             with(binding){
-                itemImage.setImageResource(images[position])
+                itemImage.setImageResource(images.getResourceId(images.getIndex(position), -1)) //https://stackoverflow.com/questions/58628096/kotlin-get-image-from-image-array-in-drawable-folder
                 itemTitle.text = names[position]
                 itemDetails.text = addresses[position]
+
+                //apparently you have to recycle it
+                ///images.recycle()
             }
         }
     }
