@@ -1,10 +1,10 @@
-package com.example.myrecyclerviewapp2
+package com.example.ContactsApp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myrecyclerviewapp2.databinding.ActivityMainBinding
+import com.example.ContactsApp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,8 +12,6 @@ class MainActivity : AppCompatActivity() {
 
     private var layoutManager : RecyclerView.LayoutManager? = null
     private var adapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>? = null
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,15 +22,8 @@ class MainActivity : AppCompatActivity() {
 
         layoutManager = LinearLayoutManager(this)
         binding.recyclerView.layoutManager = layoutManager
-        adapter = RecyclerAdapter(this.applicationContext)
+        adapter = RecyclerAdapter(this.resources)
         binding.recyclerView.adapter = adapter
-
-
-
-        //val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        //recycler View.layoutManager  = layoutManager
-        //recyclerView.adapter = adapter
-
 
     }
 }

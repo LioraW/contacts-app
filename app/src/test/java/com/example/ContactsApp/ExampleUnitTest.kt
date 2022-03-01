@@ -1,4 +1,4 @@
-package com.example.myrecyclerviewapp2
+package com.example.ContactsApp
 
 import org.junit.Test
 

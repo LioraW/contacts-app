@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myrecyclerviewapp2">
+    package="com.example.ContactsApp">
 
     <application
         android:allowBackup="true"
@@ -8,12 +8,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyRecyclerViewApp2">
+        android:theme="@style/Theme.ContactsApp">
         <activity
-            android:name=".ContactActivity"
+            android:name="com.example.ContactsApp.ContactActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.ContactsApp.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

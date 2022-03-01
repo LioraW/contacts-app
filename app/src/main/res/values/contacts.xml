@@ -43,18 +43,18 @@
         <item>123-456-7890</item>
     </string-array>
     <string-array name="contactEmails">
-        <item>beniYisroel@torah.org</item>
-        <item>beniYisroel@torah.org</item>
-        <item>beniYisroel@torah.org</item>
-        <item>beniYisroel@torah.org</item>
-        <item>beniYisroel@torah.org</item>
-        <item>beniYisroel@torah.org</item>
-        <item>beniYisroel@torah.org</item>
-        <item>beniYisroel@torah.org</item>
-        <item>beniYisroel@torah.org</item>
-        <item>beniYisroel@torah.org</item>
-        <item>beniYisroel@torah.org</item>
-        <item>beniYisroel@torah.org</item>
+        <item>beniYisroel@tribes.org</item>
+        <item>beniYisroel@tribes.org</item>
+        <item>beniYisroel@tribes.org</item>
+        <item>beniYisroel@tribes.org</item>
+        <item>beniYisroel@tribes.org</item>
+        <item>beniYisroel@tribes.org</item>
+        <item>beniYisroel@tribes.org</item>
+        <item>beniYisroel@tribes.org</item>
+        <item>beniYisroel@tribes.org</item>
+        <item>beniYisroel@tribes.org</item>
+        <item>beniYisroel@tribes.org</item>
+        <item>beniYisroel@tribes.org</item>
     </string-array>
     <array name="contactImages">
         <item>@drawable/android</item>

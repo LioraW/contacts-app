@@ -1,4 +1,4 @@
-package com.example.myrecyclerviewapp2
+package com.example.ContactsApp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
