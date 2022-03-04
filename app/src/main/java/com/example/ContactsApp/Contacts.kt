@@ -5,14 +5,18 @@ import android.content.res.TypedArray
 
 class Contacts(res : Resources) {
 
-    var names: Array<String> = res.getStringArray(R.array.contactNames)
+    var firstNames: Array<String> = res.getStringArray(R.array.contactFirstNames)
+    var lastNames: Array<String> = res.getStringArray(R.array.contactLastNames)
     var addresses : Array<String> = res.getStringArray(R.array.contactAddresses)
     var numbers : Array<String> = res.getStringArray(R.array.contactNumbers)
     var emails : Array<String> = res.getStringArray(R.array.contactEmails)
     var images : TypedArray = res.obtainTypedArray(R.array.contactImages)
 
-    fun getContactName(id : Int): String {
-        return names[id]
+    fun getContactFirstName(id : Int): String {
+        return firstNames[id]
+    }
+    fun getContactLastName(id: Int): String {
+        return lastNames[id]
     }
     fun getContactAddress(id : Int): String {
         return addresses[id]
@@ -28,6 +32,6 @@ class Contacts(res : Resources) {
     }
 
     fun getContactListSize(): Int {
-        return names.size
+        return firstNames.size
     }
 }

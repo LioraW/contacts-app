@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ContactsApp.databinding.CardLayoutBinding
 
-
 class RecyclerAdapter(resources : Resources): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
     private var contacts : Contacts = Contacts(resources)
@@ -34,11 +33,14 @@ class RecyclerAdapter(resources : Resources): RecyclerView.Adapter<RecyclerAdapt
     override fun onBindViewHolder(holder: RecyclerAdapter.ViewHolder, position: Int) { //almost always the same. we have to pass the instance of the title, position
         with(holder){
             with(binding){
-                itemImage.setImageResource(contacts.getContactImageId(position))
-                itemTitle.text = contacts.getContactName(position)
-                itemDetails.text = contacts.getContactAddress(position)
+                val firstName = contacts.getContactFirstName(position)
+                val lastName = contacts.getContactLastName(position)
+                val imageId = contacts.getContactImageId(position)
 
-                ///images.recycle() //apparently you should recycle it
+                itemImage.setImageResource(imageId)
+                itemFirstName.text = firstName
+                itemLastName.text = lastName
+
             }
         }
     }

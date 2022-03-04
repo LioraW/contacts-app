@@ -17,7 +17,8 @@ class ContactActivity : AppCompatActivity() {
         val contactId = intent.getIntExtra("ContactId", -1)
 
         //item values
-        val name = contacts.getContactName(contactId)
+        val firstName = contacts.getContactFirstName(contactId)
+        val lastName = contacts.getContactLastName(contactId)
         val address = contacts.getContactAddress(contactId)
         val number = contacts.getContactNumber(contactId)
         val email = contacts.getContactEmail(contactId)
@@ -31,7 +32,9 @@ class ContactActivity : AppCompatActivity() {
         val contactImage = findViewById<ImageView>(R.id.contact_image)
 
         //put the values in the containers
-        contactName.text = name
+        val fullName = "$firstName $lastName"
+
+        contactName.text = fullName
         contactAddress.text = address
         contactNumber.text = number
         contactEmail.text = email

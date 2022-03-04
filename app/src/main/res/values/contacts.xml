@@ -1,19 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="contactNames">
-        <item>Reuven</item>
-        <item>Shimon</item>
-        <item>Levi</item>
-        <item>Yehuda</item>
-        <item>Issacar</item>
-        <item>Zebulun</item>
-        <item>Dan</item>
-        <item>Naftali</item>
-        <item>Gad</item>
-        <item>Asher</item>
-        <item>Yosef</item>
-        <item>Binyamin</item>
+    <string-array name="contactFirstNames">
+        <item>Alex</item>
+        <item>Bob</item>
+        <item>Carmen</item>
+        <item>Darla</item>
+        <item>Eric</item>
+        <item>Gershon</item>
+        <item>Harold</item>
+        <item>Ira</item>
+        <item>Jared</item>
+        <item>Karen</item>
+        <item>Laura</item>
+        <item>Mary</item>
     </string-array>
+
+    <string-array name="contactLastNames">
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+        <item>BenYaakov</item>
+    </string-array>
+
     <string-array name="contactAddresses">
         <item>Street1</item>
         <item>Street2</item>
@@ -28,6 +46,7 @@
         <item>Street11</item>
         <item>Street12</item>
     </string-array>
+
     <string-array name="contactNumbers">
         <item>123–456-7890</item>
         <item>123–456-7890</item>
@@ -42,6 +61,7 @@
         <item>123-456-7890</item>
         <item>123-456-7890</item>
     </string-array>
+
     <string-array name="contactEmails">
         <item>beniYisroel@tribes.org</item>
         <item>beniYisroel@tribes.org</item>
@@ -56,20 +76,21 @@
         <item>beniYisroel@tribes.org</item>
         <item>beniYisroel@tribes.org</item>
     </string-array>
+
     <array name="contactImages">
-        <item>@drawable/android</item>
-        <item>@drawable/android</item>
-        <item>@drawable/android</item>
-        <item>@drawable/android</item>
-        <item>@drawable/android</item>
-        <item>@drawable/android</item>
-        <item>@drawable/android</item>
-        <item>@drawable/android</item>
-        <item>@drawable/android</item>
-        <item>@drawable/android</item>
-        <item>@drawable/android</item>
-        <item>@drawable/android</item>
-        <item>@drawable/android</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/duck</item>
+        <item>@drawable/duck</item>
     </array>
 
 
