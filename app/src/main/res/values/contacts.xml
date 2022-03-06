@@ -33,18 +33,18 @@
     </string-array>
 
     <string-array name="contactAddresses">
-        <item>Street1</item>
-        <item>Street2</item>
-        <item>Street3</item>
-        <item>Street4</item>
-        <item>Street5</item>
-        <item>Street6</item>
-        <item>Street7</item>
-        <item>Street8</item>
-        <item>Street9</item>
-        <item>Street10</item>
-        <item>Street11</item>
-        <item>Street12</item>
+        <item>Street 1</item>
+        <item>Street 2</item>
+        <item>Street 3</item>
+        <item>Street 4</item>
+        <item>Street 5</item>
+        <item>Street 6</item>
+        <item>Street 7</item>
+        <item>Street 8</item>
+        <item>Street 9</item>
+        <item>Street 10</item>
+        <item>Street 11</item>
+        <item>Street 12</item>
     </string-array>
 
     <string-array name="contactNumbers">
@@ -79,18 +79,18 @@
 
     <array name="contactImages">
         <item>@drawable/duck</item>
-        <item>@drawable/duck</item>
-        <item>@drawable/duck</item>
-        <item>@drawable/duck</item>
-        <item>@drawable/duck</item>
-        <item>@drawable/duck</item>
-        <item>@drawable/duck</item>
-        <item>@drawable/duck</item>
-        <item>@drawable/duck</item>
-        <item>@drawable/duck</item>
-        <item>@drawable/duck</item>
-        <item>@drawable/duck</item>
-        <item>@drawable/duck</item>
+        <item>@drawable/frog</item>
+        <item>@drawable/cat</item>
+        <item>@drawable/dog</item>
+        <item>@drawable/fish</item>
+        <item>@drawable/dog2</item>
+        <item>@drawable/rabbit</item>
+        <item>@drawable/panda</item>
+        <item>@drawable/dog3</item>
+        <item>@drawable/android</item>
+        <item>@drawable/cat</item>
+        <item>@drawable/rabbit</item>
+        <item>@drawable/android</item>
     </array>
 
 

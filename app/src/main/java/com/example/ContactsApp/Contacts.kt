@@ -28,7 +28,11 @@ class Contacts(res : Resources) {
         return emails[id]
     }
     fun getContactImageId(id : Int): Int {
-        return images.getResourceId(images.getIndex(id), -1)
+        return images.getResourceId(id, -1)
+
+    }
+    fun recycleContactsImages(){
+        images.recycle()
     }
 
     fun getContactListSize(): Int {

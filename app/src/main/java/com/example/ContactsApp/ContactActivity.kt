@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.res.ResourcesCompat
 
 class ContactActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,5 +41,7 @@ class ContactActivity : AppCompatActivity() {
         contactEmail.text = email
         contactImage.setImageResource(imageId)
 
+        //recycle the contacts array
+        contacts.recycleContactsImages()
     }
 }
